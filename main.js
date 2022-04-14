@@ -6,16 +6,21 @@ const wordCounter = (value) => {
 
   if (value) {
     // COMPLETE THE LOGIC 
-    wordCount.innerHTML = `Word Count: 0`; 
+
+    const valueCount = value.split(" ").length
+    // used .split to count the number of words. the " " is important or returns total letters
+    wordCount.innerHTML = `Word Count: ${ValueCount}`;
   } else {
     // if the value is empty, set the error message value to "Please input text"
-    error.innerHTML = ""; // UPDATE THIS
+    error.innerHTML = "No text input"; // UPDATE THIS
   }
 }
 
 // OPTIONAL CHALLENGE
 const toggleMode = (btnText) => {
   // complete the function
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }
 
 // ************************************************ //
