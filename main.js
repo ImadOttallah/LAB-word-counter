@@ -9,7 +9,10 @@ const wordCounter = (value) => {
 
     const valueCount = value.split(" ").length
     // used .split to count the number of words. the " " is important or returns total letters
-    wordCount.innerHTML = `Word Count: ${ValueCount}`;
+
+    wordCount.innerHTML = `Word Count: ${valueCount}`;
+
+
   } else {
     // if the value is empty, set the error message value to "Please input text"
     error.innerHTML = "No text input"; // UPDATE THIS
