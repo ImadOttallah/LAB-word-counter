@@ -20,11 +20,28 @@ const wordCounter = (value) => {
 }
 
 // OPTIONAL CHALLENGE
-const toggleMode = (btnText) => {
-  // complete the function
+// const toggleMode = (btnText) => {
+//   // complete the function
+//   var element = document.body;
+//   element.classList.toggle("dark-mode");
+// }
+function mode() {
+ dark();
+ difText();
+};
+function dark() {
   var element = document.body;
   element.classList.toggle("dark-mode");
+};
+function difText() {
+  var elem = document.getElementById("bg-switch");
+    if (elem.value=="Light Mode") elem.value = "Dark Mode";
+    else elem.value = "Light Mode";
 }
+
+
+
+
 
 // ************************************************ //
 // **** DO NOT MODIFY THE CODE BELOW THIS LINE **** //
